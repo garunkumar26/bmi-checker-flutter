@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.red,
         appBar: AppBar(
           title: Text("BMI CALCULATOR"),
         ),
@@ -58,14 +59,14 @@ class Gender extends StatelessWidget {
       height: 150,
       width: 150,
       decoration: BoxDecoration(
-        color: Colors.blueAccent, borderRadius: BorderRadius.circular(25)
+        color: Colors.green, borderRadius: BorderRadius.circular(25)
       ),
       child:Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(icon, color:Colors.white, size:50),
+          Icon(icon, color:Colors.black, size:50),
           Text(
-            text, style: TextStyle(color: Colors.white),
+            text, style: TextStyle(color: Colors.white,fontSize: 25),
           )
         ],
       )
@@ -329,7 +330,7 @@ class FINAL extends StatelessWidget {
       height:320,
       width: 230,
       decoration: BoxDecoration(
-        color: Colors.green,borderRadius: BorderRadius.circular(20),
+        color: Colors.black,borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -339,7 +340,7 @@ class FINAL extends StatelessWidget {
             children:[
               Text('Height is:' , style: TextStyle(color:Colors.white,fontSize: 35)),
               SizedBox(width:12),
-              Text(heightN.toString(),style:TextStyle(fontSize: 38)),
+              Text(heightN.toString(),style:TextStyle(color:Colors.white,fontSize: 38)),
             ],
           ),
 
@@ -348,7 +349,7 @@ class FINAL extends StatelessWidget {
             children: [
               Text('Weight is:' , style: TextStyle(color:Colors.white,fontSize: 35)),
               SizedBox(width:12),
-              Text(weightN.toString(),style: TextStyle(fontSize: 38),),
+              Text(weightN.toString(),style: TextStyle(color:Colors.white,fontSize: 38),),
             ],
           ),
           
@@ -357,7 +358,7 @@ class FINAL extends StatelessWidget {
             children: [
               Text('Age is:' , style: TextStyle(color:Colors.white,fontSize: 35)),
               SizedBox(width:12),
-              Text(ageN.toString(),style:TextStyle(fontSize: 38)),
+              Text(ageN.toString(),style:TextStyle(color:Colors.white, fontSize: 38)),
             ],
           ),
      
